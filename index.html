@@ -9,7 +9,7 @@
 <body ng-controller="lessonCtrl" >
 
     <ul>
-        <lesson-hider ng-repeat='lesson in lessons' my-test='Hello There!' lesson='lesson' day-alert="announceDay(lesson, day)">
+        <lesson-hider ng-repeat='lesson in lessons' my-test='Hello There!' lesson='lesson' day-alert="announceDay(lesson, day)" update="deleteLesson(index)">
         </lesson-hider>
     </ul>
     <div>{{test}}</div>

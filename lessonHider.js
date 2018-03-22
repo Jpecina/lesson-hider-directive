@@ -8,7 +8,8 @@ angular.module('directivePractice')
 		restrict: 'E',
 		scope: {
 			lesson: '=',
-			dayAlert: '&'
+            dayAlert: '&',
+            update:'&'
 		},
 		controller: function( $scope, lessonService ) {
 			$scope.getSchedule = lessonService.getSchedule();

@@ -3,6 +3,10 @@ angular.module('directivePractice').controller("lessonCtrl",function($scope){
     // $scope.test="two-way data binding!";
     $scope.announceDay = function(lesson,day){
         alert(`${lesson} is active on ${day}.`)
+    };
+    $scope.deleteLesson = function(index){
+        console.log(index)
+        $scope.lessons.splice(index, 1)
     }
 
 });
